@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Monitor — 7º Andar</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header fixo no topo — fica visível enquanto rola para baixo -->
+  <header id="header">
+    <span id="title">LAB MONITOR <em>/ 7º andar</em></span>
+
+    <div class="hdiv"></div>
+
+    <div id="header-stats">
+      <span class="hstat">
+        <span class="hstat-dot active"></span>
+        <span id="count-active">0</span>
+        <span class="hstat-lbl">ativos</span>
+      </span>
+      <span class="hsep">·</span>
+      <span class="hstat">
+        <span class="hstat-dot idle"></span>
+        <span id="count-idle">0</span>
+        <span class="hstat-lbl">idle</span>
+      </span>
+      <span class="hsep">·</span>
+      <span class="hstat">
+        <span class="hstat-dot offline"></span>
+        <span id="count-offline">0</span>
+        <span class="hstat-lbl">offline</span>
+      </span>
+      <span class="hsep">·</span>
+      <span id="last-updated" class="hstat-lbl">—</span>
+    </div>
+
+    <span id="clock">00:00</span>
+
+    <input
+      id="filter-input"
+      type="text"
+      placeholder="filtrar por nome…"
+      autocomplete="off"
+      spellcheck="false"
+    >
+
+    <div class="hdiv"></div>
+
+    <div id="zoom-controls">
+      <button id="btn-zoom-out"   class="zbtn" title="Zoom out">−</button>
+      <span   id="zoom-label">100%</span>
+      <button id="btn-zoom-in"    class="zbtn" title="Zoom in">+</button>
+      <div class="zdiv"></div>
+      <button id="btn-zoom-reset" class="zbtn zreset">1×</button>
+    </div>
+  </header>
+
+  <!-- HERO: mapa ocupa todo o viewport abaixo do header -->
+  <div id="map-area">
+    <div id="map-container">
+      <!-- SVG como img para receber filter CSS sem afetar os marcadores -->
+      <img id="map-svg" src="assets/SétimoAndar_clean.svg" draggable="false" alt="">
+      <!-- marcadores injetados por initMap() -->
+    </div>
+  </div>
+
+  <!-- Lista — acessada rolando a página para baixo -->
+  <section id="list-section">
+
+    <div class="status-group" id="group-active">
+      <div class="group-header">
+        <span class="group-label active">Ativos</span>
+        <div class="group-line"></div>
+        <span class="group-count" id="gcount-active">0</span>
+      </div>
+      <div class="node-grid" id="grid-active"></div>
+    </div>
+
+    <div class="status-group" id="group-idle">
+      <div class="group-header">
+        <span class="group-label idle">Idle</span>
+        <div class="group-line"></div>
+        <span class="group-count" id="gcount-idle">0</span>
+      </div>
+      <div class="node-grid" id="grid-idle"></div>
+    </div>
+
+    <div class="status-group" id="group-offline">
+      <div class="group-header">
+        <span class="group-label offline">Offline</span>
+        <div class="group-line"></div>
+        <span class="group-count" id="gcount-offline">0</span>
+      </div>
+      <div class="node-grid" id="grid-offline"></div>
+    </div>
+
+  </section>
+
+  <div id="tooltip" role="tooltip"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/mock.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
