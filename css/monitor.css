@@ -1,0 +1,181 @@
+/* ── TV Monitor — tema escuro full-screen ─────────────────────────────────── */
+
+html, body {
+  background: #0a0a0a;
+  color: #c4cce0;
+  overflow: hidden;
+  height: 100%;
+}
+
+/* ── Layout principal: linha (esquerda | sidebar) ─────────────────────────── */
+#tv-layout {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* ── Coluna esquerda: header + mapa ───────────────────────────────────────── */
+#tv-left {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header full-width ────────────────────────────────────────────────────── */
+#tv-header {
+  display: flex;
+  align-items: center;
+  height: 46px;
+  padding: 0 20px;
+  background: #f0eeea;
+  border-bottom: 1px solid #dddad4;
+  flex-shrink: 0;
+}
+
+#tv-title {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: #666666;
+}
+
+.tv-meta {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: #555555;
+}
+
+/* ── Área do mapa ─────────────────────────────────────────────────────────── */
+#tv-map-wrap {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#tv-map-wrap #map-area {
+  flex: 1;
+  height: 0;
+  min-height: 0;
+  overflow: hidden;
+  padding: 12px 16px;
+  background: #f0eeea;
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#tv-map-wrap #map-area.panning { cursor: grabbing; }
+
+#tv-map-wrap #map-container {
+  background: #f0eeea;
+}
+
+#tv-map-wrap .node-marker.offline {
+  background: #8a94aa;
+  opacity: 0.45;
+}
+
+/* ── Sidebar dark ─────────────────────────────────────────────────────────── */
+#tv-sidebar {
+  width: 240px;
+  flex-shrink: 0;
+  background: #0a0a0a;
+  border-left: 1px solid #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 28px 24px;
+}
+
+/* ── Relógio ─────────────────────────────────────────────────────────────── */
+#clock {
+  position: static !important;
+  left: auto !important;
+  transform: none !important;
+  font-family: 'Segoe UI', 'Inter', -apple-system, sans-serif;
+  font-size: 68px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #e8e8e8;
+  line-height: 1;
+  pointer-events: auto;
+  user-select: none;
+}
+
+#tv-date {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: #888888;
+  margin-top: 6px;
+  text-transform: capitalize;
+  letter-spacing: .04em;
+}
+
+.tv-divider {
+  height: 1px;
+  background: #222222;
+  margin: 22px 0 18px;
+  flex-shrink: 0;
+}
+
+/* ── Stats — topo, espaço livre fica abaixo ──────────────────────────────── */
+#tv-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 4px;
+}
+
+.tv-stat {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.tv-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.tv-dot.active  { background: var(--c-active); box-shadow: 0 0 7px rgba(34,197,94,.55); }
+.tv-dot.idle    { background: var(--c-idle); }
+.tv-dot.offline { background: #555555; }
+
+.tv-count {
+  font-family: 'Segoe UI', 'Inter', -apple-system, sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #e8e8e8;
+  min-width: 2.5ch;
+  font-variant-numeric: tabular-nums;
+}
+
+.tv-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: #666666;
+  align-self: flex-end;
+  padding-bottom: 8px;
+}
+
+/* ── Rodapé ───────────────────────────────────────────────────────────────── */
+#tv-sidebar-footer {
+  margin-top: auto;
+  padding-top: 20px;
+  text-align: right;
+}
+
+#tv-sidebar-footer .tv-meta {
+  color: #444444;
+}

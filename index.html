@@ -98,12 +98,24 @@
 
   </section>
 
+  <!-- Log de eventos — acessado rolando abaixo da lista -->
+  <section id="log-section">
+    <div id="log-header">
+      <span id="log-title">LOG DE EVENTOS</span>
+      <span id="log-source-badge" class="log-badge mock">MOCK</span>
+      <div class="log-hsep"></div>
+      <button id="log-clear-btn">limpar</button>
+    </div>
+    <div id="log-entries"></div>
+  </section>
+
   <div id="tooltip" role="tooltip"></div>
 
   <script src="js/config.js"></script>
   <script src="js/data.js"></script>
   <script src="js/utils.js"></script>
   <script src="js/mock.js"></script>
+  <script src="js/logger.js"></script>
   <script src="js/render.js"></script>
   <script src="js/main.js"></script>
 </body>

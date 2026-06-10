@@ -1,0 +1,23 @@
+{
+  "pc:Marcon":           { "x": 0.2060, "y": 0.0496, "label": "Marcon",               "ip": "192.168.1.101", "ip_dev": "8.8.8.8"       },
+  "pc:Anderson":         { "x": 0.2500, "y": 0.0496, "label": "Anderson",             "ip": "192.168.1.102", "ip_dev": "1.1.1.1"       },
+  "pc:Moraes":           { "x": 0.2950, "y": 0.0496, "label": "Moraes",               "ip": "192.168.1.103", "ip_dev": "8.8.4.4"       },
+  "pc:Rafael":           { "x": 0.3400, "y": 0.0496, "label": "Rafael",               "ip": "192.168.1.104"                            },
+  "pc:Isadora":          { "x": 0.1296, "y": 0.3821, "label": "Isadora",              "ip": "192.168.1.110"                            },
+  "pc:Arthur":           { "x": 0.0442, "y": 0.4947, "label": "Arthur",               "ip": "192.168.1.111", "ip_dev": "192.168.99.1"  },
+  "pc:Rodrigo Susin":    { "x": 0.0724, "y": 0.4947, "label": "Rodrigo Susin",        "ip": "192.168.1.112"                            },
+  "pc:Carlos Eduardo":   { "x": 0.0442, "y": 0.5357, "label": "Carlos Eduardo",       "ip": "192.168.1.113"                            },
+  "pc:Pedro Henrique":   { "x": 0.0724, "y": 0.5357, "label": "Pedro Henrique",       "ip": "192.168.1.114"                            },
+  "pc:Milena":           { "x": 0.0442, "y": 0.6453, "label": "Milena",               "ip": "192.168.1.115"                            },
+  "pc:Francesco":        { "x": 0.0724, "y": 0.6453, "label": "Francesco",            "ip": "192.168.1.116"                            },
+  "pc:Luiz":             { "x": 0.0442, "y": 0.6862, "label": "Luiz",                 "ip": "192.168.1.117"                            },
+  "pc:Rodrigo Machado":  { "x": 0.0724, "y": 0.6862, "label": "Rodrigo Machado",      "ip": "192.168.1.118"                            },
+  "pc:Bernardo Fraga":   { "x": 0.8183, "y": 0.7615, "label": "Bernardo Fraga",       "ip": "192.168.1.120"                            },
+  "pc:Pedro Oliveira":   { "x": 0.7870, "y": 0.7624, "label": "Pedro Oliveira",       "ip": "192.168.1.121"                            },
+  "pc:Giovana":          { "x": 0.9208, "y": 0.8225, "label": "Giovana",              "ip": "192.168.1.122"                            },
+  "pc:Thiago Zilberknop":{ "x": 0.9022, "y": 0.8225, "label": "Thiago Zilberknop",    "ip": "192.168.1.123"                            },
+  "pc:Thiago Faria":     { "x": 0.8481, "y": 0.7987, "label": "Thiago Faria",         "ip": "192.168.1.124"                            },
+  "pc:Pedro Sangali":    { "x": 0.8184, "y": 0.7987, "label": "Pedro Sangali",        "ip": "192.168.1.125"                            },
+  "pc:Bernardo Mendes":  { "x": 0.7872, "y": 0.7982, "label": "Bernardo Mendes",      "ip": "192.168.1.126"                            },
+  "pc:Debora+Arthur+Theo":{ "x": 0.8482, "y": 0.7624, "label": "Débora, Arthur e Theo","ip": "192.168.1.127"                           }
+}

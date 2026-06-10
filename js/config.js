@@ -2,6 +2,10 @@ const CONFIG = {
   POLL_INTERVAL_MS: 4000,
   NODES_CHANGED_PER_TICK: 3,
 
+  USE_BACKEND:  true,
+  BACKEND_URL: 'http://localhost:8000/api/nodes',
+
+
   ZOOM_STEP: 0.25,
   ZOOM_MIN:  0.5,
   ZOOM_MAX:  4.0,

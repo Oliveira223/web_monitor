@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Monitor — 7º Andar · TV</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/monitor.css">
+</head>
+<body>
+
+  <div id="tv-layout">
+
+    <!-- ── Esquerda: header + mapa ───────────────────────────────────────── -->
+    <div id="tv-left">
+
+      <div id="tv-header">
+        <span id="tv-title">LAB · 7º ANDAR</span>
+      </div>
+
+      <div id="tv-map-wrap">
+        <div id="map-area">
+          <div id="map-container">
+            <img id="map-svg" src="assets/SétimoAndar_clean.svg" draggable="false" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <aside id="tv-sidebar">
+
+        <div id="tv-clock-block">
+          <div id="clock">00:00</div>
+          <div id="tv-date">—</div>
+        </div>
+
+        <div class="tv-divider"></div>
+
+        <div id="tv-stats">
+          <div class="tv-stat">
+            <span class="tv-dot active"></span>
+            <span id="count-active" class="tv-count">0</span>
+            <span class="tv-label">ATIVOS</span>
+          </div>
+          <div class="tv-stat">
+            <span class="tv-dot idle"></span>
+            <span id="count-idle" class="tv-count">0</span>
+            <span class="tv-label">IDLE</span>
+          </div>
+          <div class="tv-stat">
+            <span class="tv-dot offline"></span>
+            <span id="count-offline" class="tv-count">0</span>
+            <span class="tv-label">OFFLINE</span>
+          </div>
+        </div>
+
+        <div id="tv-sidebar-footer">
+          <span id="last-updated-sidebar" class="tv-meta">—</span>
+        </div>
+
+      </aside>
+
+  </div>
+
+  <div id="tooltip" role="tooltip"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/mock.js"></script>
+  <script src="js/logger.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

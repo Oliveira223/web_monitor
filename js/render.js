@@ -79,6 +79,7 @@ function initMap() {
 
 function initNodeGrid() {
   const grid = document.getElementById('grid-offline');
+  if (!grid) return; // página TV não tem lista de cards
 
   for (const [id, pos] of Object.entries(NODE_POSITIONS)) {
     const card = document.createElement('div');
@@ -115,7 +116,10 @@ function updateMap(nodes) {
 }
 
 function updateGrid(nodes) {
-  const filter  = document.getElementById('filter-input').value.toLowerCase();
+  const filterEl = document.getElementById('filter-input');
+  if (!filterEl) return; // página TV não tem lista de cards
+
+  const filter  = filterEl.value.toLowerCase();
   const visible = { active: 0, idle: 0, offline: 0 };
 
   Object.values(nodes).forEach(node => {
@@ -158,7 +162,11 @@ function updateHeader(nodes) {
   document.getElementById('count-offline').textContent = counts.offline;
 
   if (state.lastUpdated) {
-    document.getElementById('last-updated').textContent = 'atualizado ' + timeAgo(state.lastUpdated.toISOString());
+    const txt = 'atualizado ' + timeAgo(state.lastUpdated.toISOString());
+    const header  = document.getElementById('last-updated');
+    if (header) header.textContent = txt;
+    const sidebar = document.getElementById('last-updated-sidebar');
+    if (sidebar) sidebar.textContent = txt;
   }
 }
 
