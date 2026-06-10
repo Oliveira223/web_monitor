@@ -10,7 +10,7 @@ CORS_ORIGIN      = "*"
 # ── Modo desenvolvimento ──────────────────────────────────────────────────────
 # True  → usa "ip_dev" do nodes.json quando disponível (IPs reais para testar)
 # False → usa sempre "ip" (IPs reais do lab)
-DEV_MODE = True
+DEV_MODE = False
 
 # ── Lê nodes.json — fonte única de verdade compartilhada com o frontend ───────
 _json_path = os.path.join(os.path.dirname(__file__), '..', 'nodes.json')

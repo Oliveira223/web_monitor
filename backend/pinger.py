@@ -26,8 +26,9 @@ def get_state() -> dict:
 
 async def _ping_once(ip: str) -> bool:
     try:
+        timeout_s = max(1, PING_TIMEOUT_MS // 1000)
         proc = await asyncio.create_subprocess_exec(
-            "ping", "-n", "1", "-w", str(PING_TIMEOUT_MS), ip,
+            "ping", "-c", "1", "-W", str(timeout_s), ip,
             stdout=asyncio.subprocess.DEVNULL,
             stderr=asyncio.subprocess.DEVNULL,
         )
