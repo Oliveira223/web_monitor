@@ -12,12 +12,12 @@
   "pc:Francesco":        { "x": 0.0724, "y": 0.6453, "label": "Francesco",            "ip": "192.168.1.116"                            },
   "pc:Luiz":             { "x": 0.0442, "y": 0.6862, "label": "Luiz",                 "ip": "192.168.1.117"                            },
   "pc:Rodrigo Machado":  { "x": 0.0724, "y": 0.6862, "label": "Rodrigo Machado",      "ip": "192.168.1.118"                            },
-  "pc:Bernardo Fraga":   { "x": 0.8183, "y": 0.7615, "label": "Bernardo Fraga",       "ip": "192.168.1.120"                            },
+  "pc:Bernardo Fraga":   { "x": 0.8183, "y": 0.7615, "label": "Bernardo Fraga",       "ip": "10.132.241.102"                            },
   "pc:Pedro Oliveira":   { "x": 0.7870, "y": 0.7624, "label": "Pedro Oliveira",       "ip": "192.168.1.121"                            },
-  "pc:Giovana":          { "x": 0.9208, "y": 0.8225, "label": "Giovana",              "ip": "192.168.1.122"                            },
-  "pc:Thiago Zilberknop":{ "x": 0.9022, "y": 0.8225, "label": "Thiago Zilberknop",    "ip": "192.168.1.123"                            },
+  "pc:Giovana":          { "x": 0.9022, "y": 0.8225, "label": "Giovana",              "ip": "192.168.80.132"                            },
+  "pc:Thiago Zilberknop":{ "x": 0.9208,"y": 0.8225, "label": "Thiago Zilberknop",    "ip": "192.168.1.123"                            },
   "pc:Thiago Faria":     { "x": 0.8481, "y": 0.7987, "label": "Thiago Faria",         "ip": "192.168.1.124"                            },
   "pc:Pedro Sangali":    { "x": 0.8184, "y": 0.7987, "label": "Pedro Sangali",        "ip": "192.168.1.125"                            },
-  "pc:Bernardo Mendes":  { "x": 0.7872, "y": 0.7982, "label": "Bernardo Mendes",      "ip": "192.168.1.126"                            },
+  "pc:Bernardo Mendes":  { "x": 0.7872, "y": 0.7982, "label": "Bernardo Mendes",      "ip": "192.168.80.114"                            },
   "pc:Debora+Arthur+Theo":{ "x": 0.8482, "y": 0.7624, "label": "Débora, Arthur e Theo","ip": "192.168.1.127"                           }
 }

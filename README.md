@@ -60,11 +60,6 @@ cd web_monitor
 python -m http.server 8080
 ```
 
-**Opção B — rodar da pasta pai** (`04_MONITOR/`):
-
-```bash
-python -m http.server 8080 --directory web_monitor
-```
 
 
 Acesse:
